@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dua</title>
-<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -20,87 +20,138 @@
   }
 
   .content {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1vh;
-    padding: 0 5vw;
-    direction: rtl;
     width: 100%;
+    padding: 0 3vw;
+    gap: 0;
+    direction: ltr;
     transform-origin: center center;
     transition: transform 0.1s;
   }
 
-  .arabic {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .en {
+    flex: 1;
+    text-align: left;
+    direction: ltr;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3vw;
+    color: #2a3a3a;
+    line-height: 1.65;
+    padding-right: 2.5vw;
+    border-right: 1px solid rgba(0, 60, 60, 0.07);
+  }
+
+  .ar {
+    flex: 1;
     font-family: 'Amiri Quran', serif;
-    font-size: 5.1vw;
+    font-size: 4.6vw;
     color: #1a1a1a;
     line-height: 1.6;
     direction: rtl;
+    text-align: right;
+    padding-left: 2.5vw;
   }
 
-  .separator {
-    width: 10vw;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(0, 60, 60, 0.25), transparent);
-    margin: 0.4vh 0;
-  }
-
-  .logo {
-    position: absolute;
-    bottom: 1.5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 8vw;
-    opacity: 0.9;
-    filter: brightness(0);
-  }
 </style>
 </head>
 <body>
 
   <div class="content">
-    <div class="arabic">اللّهُمّ أَهْلَ الْكِبْرِيَاءِ وَالْعَظَمَةِ،</div>
-    <div class="arabic">وَأَهْلَ الْجُودِ وَالْجَبَرُوتِ،</div>
-    <div class="arabic">وَأَهْلَ الْعَفْوِ وَالرّحْمَةِ،</div>
-    <div class="arabic">وَأَهْلَ التّقْوَى وَالْمَغْفِرَةِ،</div>
 
-    <div class="separator"></div>
+    <div class="row">
+      <div class="en">O Allah: You are the Lord of glory and greatness</div>
+      <div class="ar">اللّهُمّ أَهْلَ الْكِبْرِيَاءِ وَالْعَظَمَةِ،</div>
+    </div>
+    <div class="row">
+      <div class="en">And the Lord of magnanimity and omnipotence</div>
+      <div class="ar">وَأَهْلَ الْجُودِ وَالْجَبَرُوتِ،</div>
+    </div>
+    <div class="row">
+      <div class="en">And the Lord of pardon and mercy,</div>
+      <div class="ar">وَأَهْلَ الْعَفْوِ وَالرّحْمَةِ،</div>
+    </div>
+    <div class="row">
+      <div class="en">And the worthiest of being feared and the Lord of forgiveness;</div>
+      <div class="ar">وَأَهْلَ التّقْوَى وَالْمَغْفِرَةِ،</div>
+    </div>
 
-    <div class="arabic">أَسْأَلُكَ بِحَقّ هذَا الْيَوْمِ</div>
-    <div class="arabic">الّذِي جَعَلْتَهُ لِلْمُسْلِمِينَ عِيداً،</div>
-    <div class="arabic">وَلِمُحَمّدٍ صَلَّى اللهُ عَلَيْهِ وَآلِه</div>
-    <div class="arabic">ذُخْراً وَمَزِيداً،</div>
-    <div class="arabic">أَنْ تُصَلّيَ عَلَى مُحَمّدٍ وَآلِ مُحَمّدٍ</div>
+    <div class="row">
+      <div class="en">I beseech You in the name of this day,</div>
+      <div class="ar">أَسْأَلُكَ بِحَقّ هذَا الْيَوْمِ</div>
+    </div>
+    <div class="row">
+      <div class="en">which You have decided to be a feast for the Muslims,</div>
+      <div class="ar">الّذِي جَعَلْتَهُ لِلْمُسْلِمِينَ عِيداً،</div>
+    </div>
+    <div class="row">
+      <div class="en">And to be safety and increasing honor for Muhammad—</div>
+      <div class="ar">وَلِمُحَمّدٍ صَلَّى اللهُ عَلَيْهِ وَآلِه</div>
+    </div>
+    <div class="row">
+      <div class="en">peace of Allah be upon him and his Household—</div>
+      <div class="ar">ذُخْراً وَمَزِيداً،</div>
+    </div>
+    <div class="row">
+      <div class="en">(I beseech You) that You may send blessings upon Muhammad and the Household of Muhammad,</div>
+      <div class="ar">أَنْ تُصَلّيَ عَلَى مُحَمّدٍ وَآلِ مُحَمّدٍ</div>
+    </div>
 
-    <div class="separator"></div>
+    <div class="row">
+      <div class="en">And You may include me with every item of goodness</div>
+      <div class="ar">وَأَنْ تُدْخِلَنِي فِي كُلّ خَيْرٍ</div>
+    </div>
+    <div class="row">
+      <div class="en">with which You have included Muhammad and the Household of Muhammad,</div>
+      <div class="ar">أَدْخَلْتَ فِيهِ مُحَمّداً وَآلَ مُحَمّدٍ،</div>
+    </div>
+    <div class="row">
+      <div class="en">And that You save me from any item of evil</div>
+      <div class="ar">وَأَنْ تُخْرِجَنِي مِنْ كُلِّ سُوءٍ</div>
+    </div>
+    <div class="row">
+      <div class="en">from which You have saved Muhammad and the Household of Muhammad,</div>
+      <div class="ar">أَخْرَجْتَ مِنْهُ مُحَمّداً وَآلَ مُحَمّدٍ</div>
+    </div>
+    <div class="row">
+      <div class="en">May Your blessings be upon him and upon them.</div>
+      <div class="ar">صَلَوَاتُكَ عَلَيْهِ وَعَلَيْهِمْ.</div>
+    </div>
 
-    <div class="arabic">وَأَنْ تُدْخِلَنِي فِي كُلّ خَيْرٍ</div>
-    <div class="arabic">أَدْخَلْتَ فِيهِ مُحَمّداً وَآلَ مُحَمّدٍ،</div>
-    <div class="arabic">وَأَنْ تُخْرِجَنِي مِنْ كُلِّ سُوءٍ</div>
-    <div class="arabic">أَخْرَجْتَ مِنْهُ مُحَمّداً وَآلَ مُحَمّدٍ</div>
-    <div class="arabic">صَلَوَاتُكَ عَلَيْهِ وَعَلَيْهِمْ.</div>
+    <div class="row">
+      <div class="en">O Allah: I pray You for the best of all that</div>
+      <div class="ar">اللّهُمّ إِنّي أَسْأَلُكَ خَيْرَ مَا</div>
+    </div>
+    <div class="row">
+      <div class="en">for which Your righteous servants have prayed You,</div>
+      <div class="ar">سَأَلَكَ عِبَادُكَ الصَّالِحُونَ،</div>
+    </div>
+    <div class="row">
+      <div class="en">And I seek Your protection against all that</div>
+      <div class="ar">وَأَعُوذُ بِكَ مِمَّا اسْتَعَاذَ مِنْهُ</div>
+    </div>
+    <div class="row">
+      <div class="en">against which Your sincere servants have asked Your protection.</div>
+      <div class="ar">عِبَادُكَ المُخْلِصُون.</div>
+    </div>
 
-    <div class="separator"></div>
-
-    <div class="arabic">اللّهُمّ إِنّي أَسْأَلُكَ خَيْرَ مَا</div>
-    <div class="arabic">سَأَلَكَ عِبَادُكَ الصَّالِحُونَ،</div>
-    <div class="arabic">وَأَعُوذُ بِكَ مِمَّا اسْتَعَاذَ مِنْهُ</div>
-    <div class="arabic">عِبَادُكَ المُخْلِصُون.</div>
   </div>
 
   <script>
     function fitContent() {
       const content = document.querySelector('.content');
-      const logo = document.querySelector('.logo');
-      const logoHeight = logo ? logo.offsetHeight + window.innerHeight * 0.03 : 0;
-      const availableHeight = window.innerHeight - logoHeight - (window.innerHeight * 0.04);
-      
-      // Reset scale to measure natural height
+      const availableHeight = window.innerHeight * 0.96;
+
       content.style.transform = 'scale(1)';
       const naturalHeight = content.scrollHeight;
-      
+
       if (naturalHeight > availableHeight) {
         const scale = availableHeight / naturalHeight;
         content.style.transform = `scale(${scale})`;
