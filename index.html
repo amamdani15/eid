@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City of Knowledge — Eid Displays</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Amiri+Quran&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d0e8f2 0%, #b8e0e0 30%, #c4e8d4 60%, #d4f0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .logo {
+    height: 80px;
+    filter: brightness(0);
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1a3a3a;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .cards {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 280px;
+    padding: 40px 28px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .card:hover {
+    background: rgba(255, 255, 255, 0.55);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 60, 60, 0.1);
+  }
+
+  .card-arabic {
+    font-family: 'Amiri Quran', serif;
+    font-size: 26px;
+    color: #1a1a1a;
+    direction: rtl;
+    line-height: 1.6;
+  }
+
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a5c5c;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .card-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(42, 92, 92, 0.6);
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 60, 60, 0.2), transparent);
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 700px) {
+    .cards { flex-direction: column; gap: 20px; }
+    .card { width: 260px; padding: 32px 24px; }
+    h1 { font-size: 20px; letter-spacing: 3px; }
+    .logo { height: 60px; }
+    .container { gap: 36px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="logo" src="city_of_knowledge_logo.png" alt="City of Knowledge">
+
+    <h1>Eid Displays</h1>
+
+    <div class="cards">
+      <a class="card" href="takbeer_desktop.html">
+        <div class="card-arabic">اللَّهُ اكْبَرُ</div>
+        <div class="divider"></div>
+        <div class="card-title">Takbeer</div>
+        <div class="card-subtitle">Desktop / TV</div>
+      </a>
+
+      <a class="card" href="dua_desktop.html">
+        <div class="card-arabic">اللّهُمّ أَهْلَ الْكِبْرِيَاءِ</div>
+        <div class="divider"></div>
+        <div class="card-title">Dua</div>
+        <div class="card-subtitle">Desktop / TV</div>
+      </a>
+
+      <a class="card" href="dua_mobile.html">
+        <div class="card-arabic">اللّهُمّ أَهْلَ الْكِبْرِيَاءِ</div>
+        <div class="divider"></div>
+        <div class="card-title">Dua</div>
+        <div class="card-subtitle">Mobile</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takbeer</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d0e8f2 0%, #b8e0e0 30%, #c4e8d4 60%, #d4f0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    padding: 0 4vw;
+  }
+
+  .verse-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1vw;
+  }
+
+  .arabic {
+    font-family: 'Amiri Quran', serif;
+    font-size: 2.5vw;
+    color: #1a1a1a;
+    line-height: 1.7;
+    direction: rtl;
+    white-space: nowrap;
+  }
+
+  .english {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.67vw;
+    font-weight: 600;
+    font-style: italic;
+    color: #2a5c5c;
+    line-height: 1.4;
+    letter-spacing: 0.1vw;
+    white-space: nowrap;
+  }
+
+  .separator {
+    width: 4vw;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 60, 60, 0.25), transparent);
+  }
+
+  .logo {
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    height: 6.5vw;
+    opacity: 0.9;
+    filter: brightness(0);
+  }
+</style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="verse-group">
+      <div class="arabic">اللَّهُ اكْبَرُ ٱللَّهُ اكْبَرُ</div>
+      <div class="english">Allah is Great. Allah is Great.</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="verse-group">
+      <div class="arabic">لاَ إِلٰهَ إِلاَّ اللَّهُ</div>
+      <div class="english">There is no god save Allah.</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="verse-group">
+      <div class="arabic">وَٱللَّهُ اكْبَرُ اللَّهُ اكْبَرُ</div>
+      <div class="english">And Allah is Great. Allah is Great.</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="verse-group">
+      <div class="arabic">وَلِلَّهِ ٱلْحَمْدُ</div>
+      <div class="english">All praise be to Allah.</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="verse-group">
+      <div class="arabic">الْحَمْدُ لِلَّهِ عَلَىٰ مَا هَدَانَا</div>
+      <div class="english">All praise be to Allah for He has shown us the Right Path.</div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="verse-group">
+      <div class="arabic">وَلَهُ ٱلشُّكْرُ عَلَىٰ مَا اوْلانَا</div>
+      <div class="english">All thanks be to Him for that which He has conferred upon us.</div>
+    </div>
+  </div>
+
+  <img class="logo" src="city_of_knowledge_logo.png" alt="City of Knowledge">
+
+</body>
+</html>

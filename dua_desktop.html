@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dua</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #d0e8f2 0%, #b8e0e0 30%, #c4e8d4 60%, #d4f0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0 4vw;
+    direction: rtl;
+    width: 100%;
+  }
+
+  .arabic {
+    font-family: 'Amiri Quran', serif;
+    font-size: 3vw;
+    color: #1a1a1a;
+    line-height: 1.7;
+    direction: rtl;
+    white-space: nowrap;
+  }
+
+  .separator {
+    width: 4vw;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 60, 60, 0.25), transparent);
+    margin: 0.4vw 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    height: 6.5vw;
+    opacity: 0.9;
+    filter: brightness(0);
+  }
+</style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="arabic">اللّهُمّ أَهْلَ الْكِبْرِيَاءِ وَالْعَظَمَةِ، وَأَهْلَ الْجُودِ وَالْجَبَرُوتِ،</div>
+    <div class="arabic">وَأَهْلَ الْعَفْوِ وَالرّحْمَةِ، وَأَهْلَ التّقْوَى وَالْمَغْفِرَةِ،</div>
+
+    <div class="separator"></div>
+
+    <div class="arabic">أَسْأَلُكَ بِحَقّ هذَا الْيَوْمِ الّذِي جَعَلْتَهُ لِلْمُسْلِمِينَ عِيداً، وَلِمُحَمّدٍ صَلَّى اللهُ عَلَيْهِ وَآلِه</div>
+    <div class="arabic">ذُخْراً وَمَزِيداً، أَنْ تُصَلّيَ عَلَى مُحَمّدٍ وَآلِ مُحَمّدٍ</div>
+
+    <div class="separator"></div>
+
+    <div class="arabic">وَأَنْ تُدْخِلَنِي فِي كُلّ خَيْرٍ أَدْخَلْتَ فِيهِ مُحَمّداً وَآلَ مُحَمّدٍ،</div>
+    <div class="arabic">وَأَنْ تُخْرِجَنِي مِنْ كُلِّ سُوءٍ أَخْرَجْتَ مِنْهُ مُحَمّداً وَآلَ مُحَمّدٍ صَلَوَاتُكَ عَلَيْهِ وَعَلَيْهِمْ.</div>
+
+    <div class="separator"></div>
+
+    <div class="arabic">اللّهُمّ إِنّي أَسْأَلُكَ خَيْرَ مَا سَأَلَكَ عِبَادُكَ الصَّالِحُونَ، وَأَعُوذُ بِكَ مِمَّا اسْتَعَاذَ مِنْهُ عِبَادُكَ المُخْلِصُون.</div>
+  </div>
+
+  <img class="logo" src="city_of_knowledge_logo.png" alt="City of Knowledge">
+
+</body>
+</html>
